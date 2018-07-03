@@ -1,9 +1,10 @@
 class ArtistsController < ApplicationController
   def index
-
+      
   end
 
   def show
+    set_artist
   end
 
   def new
