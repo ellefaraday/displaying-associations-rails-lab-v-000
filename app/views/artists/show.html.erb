@@ -1,3 +1,6 @@
 <h1><%=@artist.name%></h1>
 
-<ul><%@artist.
+<ul><%@artist.songs.each do |s|%>
+  <li><%= link_to s.name, song_path(s)%></li>
+  <%end%>
+</ul>
